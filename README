@@ -1,0 +1,34 @@
+Port of the nRF24L01 radio firmware by Neil MacMillan to Linux. 
+Developed and tested on the mini2440 by Doug and Will Szumski (11-01-12)
+
+Useful Links:
+
+Neil's firmware: http://nrqm.ca/nrf24l01/firmware/
+
+File descriptions:
+
+in mach-config:
+
+mach-mini2440.c : Working machine config configuring SPI0 and GPIO on mini2440, kernel 2.6.32-rc8
+
+in transmit-test:
+
+gpio.c GPIO userspace helper for controlling CE pin:
+gpio.h
+nRF24L01.h : registers/ constants for radio chipset
+packet.h : radio packet definition
+radio.c : radio driver
+radio.h
+spi.c : spi interface / GPIO interface for mini2440
+spi.h
+threaded_isr.c : interrupt handler for radio (relies on modified spidev interface)
+threaded_isr.h
+transmit_test.c : transmission test for mini2440 - tested working.
+
+in modified-spidev:
+
+spidev.c : modified spidev to provide uio node for interfacing with the interrupt pin on radio
+spidev.h
+Makefile : crude makefile for the above
+test_uio.c : test for uio node
+
