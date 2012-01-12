@@ -34,10 +34,13 @@
 
 
 static pthread_t interrupt_thread;
+
 extern void * isr_blocking_read(void * );
 extern int uio_select(fd_set *);
 extern pthread_mutex_t * isr_get_mutex(void);
 extern int uio_read(int *,  unsigned * );
+
+
 
 //get lock on mutex before transmission or monitoring interrupt
 static pthread_mutex_t isr_mutex = PTHREAD_MUTEX_INITIALIZER;

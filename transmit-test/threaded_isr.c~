@@ -20,7 +20,7 @@
 
 #include "threaded_isr.h"
 
-static void interrupt_handler(unsigned);
+ static void interrupt_handler(unsigned);
 
 /*
 int main(void)

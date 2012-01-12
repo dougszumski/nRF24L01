@@ -1,7 +1,7 @@
 /*  
  * Based on documentation/spi/spidev_test.c
- * Doug S. Szumski <d.s.szumski@gmail.com> and
- * Will J. Szumski <averylongnamewhichnobodyhas@gmail.com> 11-01-2012
+ * Doug S. Szumski <d.s.szumski@gmail.com> 11-01-2012 and
+ * Will J. Szumski <averylongnamewhichnobodyhas@gmail.com> 
  * 
  *
  * This program is free software; you can redistribute it and/or modify
