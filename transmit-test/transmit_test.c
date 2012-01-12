@@ -1,5 +1,5 @@
 /*  
- * Doug S. Szumski <d.s.szumski@gmail.com> 11-01-2012 and
+ * Doug S. Szumski <d.s.szumski@gmail.com> and
  * Will J. Szumski <averylongnamewhichnobodyhas@gmail.com> 11-01-2012
  * 
  *
@@ -43,8 +43,6 @@ radiopacket_t packet;
 char device_uio [] = "/dev/uio0";
 	struct isr_parameters para;
 
-
-
 void setup()
 {
 	printf("size of radiopacket: %d \n",sizeof(radiopacket_t));
@@ -67,7 +65,6 @@ void setup()
 	
 	int ret;
 	//make sure this doesnt go out of scope before thread finsihes
-
 
 	//isr_blocking_read(device,interrupt_handler);
 	para.device_node = device_uio;
