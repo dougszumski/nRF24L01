@@ -3,9 +3,6 @@
  *	Neil MacMillan.  All rights reserved. *  Created on: 26-Jan-2009
  *     
  *
- * This code is derived from software contributed to Berkeley by
- * Kevin Fall.
- *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
